@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      .dppane{
+        background-color: lightgray;
+        width: 400px;
+        height: 50px;
+        border: 1px solid black;
+        margin-bottom: 25px;
+        text-align: right;
+      }
+      .uipane {
+        display: flex;
+      }
+      .buttons {
+        width: 200px;
+        height: auto;
+        display: inline-block;
+        //border: 1px solid blue;
+      }
+      .nbuttons{
+        text-align: center;
+        height: auto;
+        width: 200px;
+      }
+      .fbuttons{
+        text-align: center;
+        height: auto;
+        width: 200px;
+      }
+      .nbutton {
+        background-color: #ddd;
+        border: none;
+        color: black;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 2px 2px;
+        cursor: pointer;
+      }
+      .nbutton:hover{
+        background-color: #555;
+        color: white;
+      }
+      .fbutton {
+        background-color: #ddd;
+        border: none;
+        color: black;
+        height: 100px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 2px 2px;
+        cursor: pointer;
+      }
+      .fbutton:hover{
+        background-color: #555;
+        color: white;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body onload="getPrint(0)">
+    <div class="dppane">
+      <p id="result"></p>
+
+    </div>
+    <div class="uipane">
+      <div class="buttons">
+        <div class="nbuttons">
+          <button type="button" name="button" class="nbutton" onclick="read('7')"> 7 </button>
+          <button type="button" name="button" class="nbutton" onclick="read('8')"> 8 </button>
+          <button type="button" name="button" class="nbutton" onclick="read('9')"> 9 </button>
+        </div>
+        <div class="nbuttons">
+          <button type="button" name="button" class="nbutton" onclick="read('6')"> 6 </button>
+          <button type="button" name="button" class="nbutton" onclick="read('5')"> 5 </button>
+          <button type="button" name="button" class="nbutton" onclick="read('4')"> 4 </button>
+        </div>
+        <div class="nbuttons">
+          <button type="button" name="button" class="nbutton" onclick="read('3')"> 3 </button>
+          <button type="button" name="button" class="nbutton" onclick="read('2')"> 2 </button>
+          <button type="button" name="button" class="nbutton" onclick="read('1')"> 1 </button>
+        </div>
+        <div class="nbuttons">
+          <button type="button" name="button" class="nbutton" onclick="read('0')"> 0 </button>
+          <button type="button" name="button" class="nbutton" onclick="read('.')"> . </button>
+          <button type="button" name="button" class="nbutton" onclick="read('-')"> - </button>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="fbuttons">
+          <button type="button" name="button" class="fbutton" onclick="convert()"> + </button>
+          <button type="button" name="button" class="fbutton"> - </button>
+          <button type="button" name="button" class="fbutton" onclick="remove()"> c </button>
+          <div class="fbuttons">
+            <button type="button" name="button" class="fbutton"> * </button>
+            <button type="button" name="button" class="fbutton"> / </button>
+            <button type="button" name="button" class="fbutton"> = </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var val1 = "0";
+    var val2 = "0";
+    var funp = false;
+
+    function read(input){
+      if(funp == false){
+        if(val1 == "0"){
+          val1 = input;
+        } else {
+          val1 = val1 + input;
+        }
+        getPrint(val1);
+      }
+      else {
+        if(val2 == "0"){
+          val2 = input;
+        } else {
+          val2 = val2 + input;
+        }
+        getPrint(val2);
+      }
+    }
+
+    function convert(){
+      var dotcnt = 0;
+      var barcnt = 0;
+      if(funp == false) {
+        funp = true;
+        for(var i = 0; i < val1.length; i++) {
+          if(val1.charAt(i) == '.'){
+            dotcnt++;
+          }
+          if(val1.charAt(i) == "-"){
+            barcnt++;
+            if(i != 0) {
+              barcnt++;
+            }
+          }
+          if(dotcnt >= 2 || barcnt >= 2) {
+            getPrint("Invalid Input");
+            break;
+          }
+        }
+      } else {
+        funp = false;
+      }
+    }
+
+    function add(){
+
+    }
+
+    function subtract(){
+
+    }
+
+    function devide(){
+
+    }
+
+    function multiply(){
+
+    }
+
+    function remove(){
+      val1 = "0";
+      val2 = "0";
+      getPrint(0);
+    }
+    function getPrint(v){
+      document.getElementById("result").innerHTML = v;
+    }
+    </script>
+  </body>
+</html>

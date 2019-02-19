@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junha Kim's Web</title>
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">-->
+<link rel="stylesheet" href="semantic/dist/semantic.min.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/Byuh.jpg");
+  text-align: center;
+  border: 1px solid black;
+}
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/Byuh.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #555;
+  color: white;
+}
+
+hr{
+  height: 2px;
+  background-color: blue;
+  border: none;
+}
+.resume {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.resume-title {
+  text-align: center;
+}
+.resume-title h1 {
+  text-shadow: 3px 1px gray
+}
+.skills {
+  text-align: center;
+  word-spacing: 15px
+}
+.experiences {
+  background-color: aliceblue;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+.projects {
+  text-align: center;
+}
+.projects a {
+  background-color: gray;
+
+}
+.footer {
+   position: bottom;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 45px;
+   background-color: mediumblue;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+  <!-- COMMON HEADER-->
+  <body>
+    <div class="ui inverted menu" style="background-color:#21215A">
+      <div class="item">
+        Home
+      </div>
+      <a class="item" name="abttag" href="html/about.html">
+        About
+      </a>
+      <a class="item" name="djstag" href="html/jsproject.html">
+        .js Projects
+      </a>
+      <a class="item" name="dsgtag" href="html/design.html">
+        Designs
+      </a>
+      <a class="item" name="phttag"href="html/photography.html">
+        Photography
+      </a>
+    </div>
+
+    <div class="ui text container segment">
+      <h1 class="ui header">
+        Imagine-a-Company
+      </h1>
+      <h2>Do whatever you want when you want to.</h2>
+      <div class="ui huge primary button">Contact Me</div>
+    </div>
+
+<div class="banner">
+  <div class="banner-text">
+    <h1 style="font-size:35px">Welcome to My website</h1>
+    <p style = "font-size:18px">Junha Kim</br>
+      <font style="font-size: 13px">B.S. Computer Science
+    </p>
+    <a href="html/gallery.html" class="button"> My Gallery </a>
+    <a href="html/HTML5Logo.html" class = "button">.js Projects</a>
+  </div>
+</div>
+
+<!--RESUME STARTS HERE-->
+<div class="resume">
+
+  <div class="resume-title">
+    <h1 style="font-family:georgia; font-size:35px; color:midnightblue">Junha Kim</h1>
+    <hr>
+    <h5 style="font-family:georgia; font-size:13px">kjunha77@gmail.com |
+    <a href="https://www.linkedin.com/in/junhadkim/">https://www.linkedin.com/in/junhadkim/</a> </h5>
+  </div>
+
+  <h3 style="font-size: 18px">SUMMARY</h3>
+  <p style="font-size: 15px">Creative passionate programmer who likes to develop Java based applications. Senior undergraduate student majoring in Computer Science.</p>
+  <h3 style="font-size: 18px">SKILLS</h3>
+  <!--TODO build skills with interactive buttons-->
+  <p class="skills" style="font-size: 15px">Java SQL R HTML(CSS) Python C,C# Adobe-Illustrator Adobe-Lightroom	Windows	MS-Office OSx </p>
+  <h3 style="font-size: 18px">EDUCATION</h3>
+  <p style="font-size: 15px">Bachelor of Science - Computer Science</br>
+   <font style="color:gray"> Brigham Young University Hawaii; Laie, HI</br>
+     3.56/4.00 GPA, Expected Graduation - April, 2020
+   </font>
+  </p>
+
+  <!--WORK & EXPERIENCES section-->
+  <h3 style="font-size: 18px">WORK & EDUCATIONAL EXPERIENCES</h3>
+  <div class="experiences">
+    <h5 style="font-size: 16px" title="jobtitle">Stretegic Development Researcher
+      <p style="font-size: 13px; color:gray; text-align:right" title="location and duration">Polynesian Cultural Center; Oahu, HI</br>
+        [May 2018 ~ Present]
+      </p>
+    </h5>
+    <ul style="font-size: 15px" title="description">
+      <li>Analyzed customer satisfaction survey data for company managerial decisions.</li>
+      <li>Maintained and refined different data flows by using Java, Python algorithms.</li>
+      <li>Answered study questions by using statistics and discrete math.</li>
+    </ul>
+  </div>
+  <div class="experiences">
+    <h5 style="font-size: 16px" title="jobtitle">Network Technician
+      <p style="font-size: 13px; color:gray; text-align:right" title="location and duration">Brigham Young University - Hawaii; Laie, HI</br>
+        [January 2018 ~ April 2018]
+      </p>
+    </h5>
+    <ul style="font-size: 15px" title="description">
+      <li>Maintained local data center including server, firewall, electric power sources and redundancy.</li>
+      <li>Configured each network devices such as switch, router, UPS and other end-devices.</li>
+      <li>Performed other physical works to terminate cable and set up hardware.</li>
+    </ul>
+  </div>
+  <div class="experiences">
+    <h5 style="font-size: 16px" title="jobtitle">School Works
+      <p style="font-size: 13px; color:gray; text-align:right" title="location and duration">Brigham Young University - Hawaii; Laie, HI</br>
+        [September 2012 ~ Present]
+      </p>
+    </h5>
+    <ul style="font-size: 15px" title="description">
+      <li>CS, CIS, IT courses: Android App Development, Java, Python, Data Science, Networking.</li>
+      <li>Math courses: Discrete Math, Statistic, Linear Algebra, Calculus.</li>
+      <li>Science courses: Physics, Chemistry, Astrology</li>
+      <li>Entrepreneurship Minor</li>
+    </ul>
+  </div>
+
+<!--PERSONAL PROJECTS sections-->
+  <h3 style="font-size: 18px">PERSONAL PROJECTS</h3>
+  <div class="projects">
+    <a href="https://github.com/kjunha/Java_Citadelles-Algorithm">Board Game “Citadelles” into an Algorithm</a></br>
+    <a href="https://github.com/kjunha/Android_Game_Chrome-vs-Safari">Android Application (Game) Programming</a></br>
+  </div>
+
+
+</div>
+<!--TODO Set footer-->
+<div class="footer">
+  <p>Thank you for visiting</br>
+    Made By. Junha Dexter Kim; 2019</p>
+</div>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>-->
+<script src="semantic/dist/semantic.min.js"></script>
+</body>
+</html>

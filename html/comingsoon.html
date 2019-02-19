@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <style media="screen">
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../src/comingsoonback.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .text.container {
+    text-align: center;
+    position: absolute;
+    top:35%;
+    left:25%;
+    color: #FFFFFF;
+  }
+
+  </style>
+  <body>
+    <!--Common menu bar-->
+    <div id="menubar"></div>
+    <script>
+      $("#menubar").load("../menubar.html");
+    </script>
+
+    <!--Contents Begins-->
+      <div class="banner">
+        <div class="ui text container">
+          <h1 class="ui inverted header" style="font-size:55px">This Page is getting ready.</h1>
+          <p style="font-size:25px; font-weight:bold">Sorry for the inconvinence. We will be back soon!</p>
+          <button class="ui huge primary button" onclick="window.location.href='../index.html'">Go Home</button>
+        </div>
+      </div>
+
+      <!--Common footer-->
+      <div id="footer"></div>
+      <script>
+        $("#footer").load("../footer.html");
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </body>
+</html>

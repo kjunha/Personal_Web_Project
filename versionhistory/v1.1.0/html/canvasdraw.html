@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Picture Arrangement</title>
+    <style media="screen">
+      
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="600" height="400">
+    </canvas>
+    <script type="text/javascript">
+      var ctx;
+      var canvas1;
+      var stuff = [];
+      var thinginmotion;
+      var offsetx;
+      var offsety;
+      function init() {
+        canvas1 = document.getElementById("canvas");
+        canvas1.onmousedown = function() {return false;};
+
+      }
+
+      function Rect(x, y, w, h, c) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
+        this.draw = drawrect;
+        this.color = c;
+        this.overcheck = overrect;
+      }
+    </script>
+  </body>
+</html>

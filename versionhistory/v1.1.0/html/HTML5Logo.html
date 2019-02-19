@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      .header{
+        background-color: gray;
+        padding: 8px;
+      }
+      .title{
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .main{
+        margin: auto;
+        width: 50%;
+      }
+    </style>
+    <title>HTML5Logo</title>
+  </head>
+  <body onload="init();">
+    <div class="header">
+      <h1 style="font-size:40px"><a href="../index.html" style="color:White">Junha Kim</a></h1>
+      <p style="text-align:right; color:mediumblue">kjunha77@gmail.com</p>
+    </div>
+    <div class="title">
+      <h1>Image Scaler.js</h1>
+    </div>
+    <div class="main" style="text-align:center">
+      <canvas id="canvas" width="280" height="400", style="border:1px solid #000000;">
+      </canvas>
+      <article class="scale">
+        Scale(%): <input id="slide" type="range" min='0' max='100' value='100' step="10" onchange="changeScale(this.value)"/>
+      </article>
+    </div>
+    <script language = "JavaScript">
+        var ctx;
+        var favoritevalue = 1;
+        var fontfamily = "65px 'Gill Sans Ultra Bold','sans-serif'";
+        ctx = document.getElementById("canvas").getContext("2d");
+
+        function init() {
+            ctx = document.getElementById("canvas").getContext("2d");
+            ctx.font = fontfamily;
+            ctx.save();
+            dologo();
+        }
+
+        function dologo() {
+          var offsety = 80;
+          ctx.restore();
+          ctx.save();
+          ctx.clearRect(0,0,600,400);
+          ctx.scale(favoritevalue, favoritevalue);
+
+          //Text fill
+          ctx.fillStyle = "#000000";
+          ctx.fillText("HTML",31,60);
+          ctx.translate(0,offsety);
+
+          //Background Ptg
+          ctx.fillStyle = "#E34C26";
+          ctx.beginPath();
+          ctx.moveTo(39,250);
+          ctx.lineTo(17,0);
+          ctx.lineTo(262,0);
+          ctx.lineTo(239,250);
+          ctx.lineTo(139,278);
+          ctx.closePath();
+          ctx.fill();
+
+          //Background Shading
+          ctx.fillStyle = "#F06529";
+          ctx.beginPath();
+          ctx.moveTo(139,257);
+          ctx.lineTo(220,234);
+          ctx.lineTo(239,20);
+          ctx.lineTo(139,20);
+          ctx.closePath();
+          ctx.fill();
+
+          //White 5
+          ctx.fillStyle = "#EBEBEB";
+          ctx.beginPath();
+          ctx.moveTo(139,113);
+          ctx.lineTo(98,113);
+          ctx.lineTo(96,82);
+          ctx.lineTo(139,82);
+          ctx.lineTo(139,51);
+          ctx.lineTo(62,51);
+          ctx.lineTo(70,144);
+          ctx.lineTo(139,144);
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.moveTo(139,193);
+          ctx.lineTo(105,184);
+          ctx.lineTo(103,159);
+          ctx.lineTo(72,159);
+          ctx.lineTo(76,207);
+          ctx.lineTo(139,225);
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.fillStyle = "#FFFFFF";
+          ctx.beginPath();
+          ctx.moveTo(139,113);
+          ctx.lineTo(139,144);
+          ctx.lineTo(177,144);
+          ctx.lineTo(173,184);
+          ctx.lineTo(139,193);
+          ctx.lineTo(139,225);
+          ctx.lineTo(202,207);
+          ctx.lineTo(210,113);
+          ctx.closePath();
+          ctx.fill();
+
+          ctx.beginPath();
+          ctx.moveTo(139,51);
+          ctx.lineTo(139,82);
+          ctx.lineTo(213,82);
+          ctx.lineTo(216,51);
+          ctx.closePath();
+          ctx.fill();
+        }
+
+        function changeScale(val){
+          favoritevalue = val / 100;
+          dologo();
+        }
+    </script>
+  </body>
+</html>
