@@ -1,0 +1,105 @@
+body{
+  background-color: #E8E8E8;
+}
+#content{
+  margin-top: 3em;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#title{
+  text-align: center;
+  font-size: 45pt;
+  font-weight: bold;
+  font-style: italic;
+}
+#scoreboard{
+  text-align: center;
+  font-size: 10pt;
+  font-weight: bold;
+}
+#inputtrig{
+  margin-top: 1em;
+  font-size: 23pt;
+}
+#inpbox{
+  background-color: #FFFFFF;
+  border: 2px solid #7E7E7E;
+  text-align: center;
+  font-size: 18pt;
+
+}
+/* The Modal (background) */
+#modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#thank{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  padding-top: 10em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#modal-content {
+  background-color: #c1c1c1;
+  margin: auto;
+  padding-top: 0.5em;
+  padding-left: 0em;
+  padding-right: 0em;
+  border: 1px solid #888;
+  width: 80%;
+}
+#modal-content-t {
+  background-color: #c1c1c1;
+  margin: auto;
+  padding-top: 0.5em;
+  padding-left: 0em;
+  padding-right: 0em;
+  border: 1px solid #888;
+  width: 70%;
+}
+
+#modeltitle{
+  color: #ffffff;
+  padding-left: 2em;
+  text-align: left;
+  font-size: 13pt
+}
+
+#inputform{
+  background-color: #ffffff;
+  padding: 2em;
+}
+/*Contents Style Tag*/
+#segm{
+  margin-top: 1.8em
+}
+.contents{
+  text-align: center;
+  font-size: 18pt;
+  line-height: 36pt;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.contents_btm {
+  color: #7E7E7E;
+  font-style: italic;
+  font-size: 10pt;
+}
