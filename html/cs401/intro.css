@@ -1,0 +1,207 @@
+/* CSS Reset Part Start */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* CSS Reset Part End */
+
+/* Common Elements */
+#sectionTitle {
+	font-size: 12pt;
+	font-weight: bold;
+	color: #101938;
+}
+#profile45 {
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left: 7px;
+	width: 45px;
+	height: 45px;
+	border: 2px solid;
+	border-color: #aaaaaa;
+	border-radius: 27px;
+	text-align: center;
+	font-size: 15pt;
+	color: #ffffff;
+	padding-top: 12px;
+	margin-right: 15px;
+}
+#contentsBox {
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	border: none;
+}
+
+/* Main CSS */
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.wrapper {
+  margin-top: 53px;
+  overflow: auto;
+  background-color: #dddddd;
+}
+
+.banner {
+  height: 400px;
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 1px solid;
+	border-color: #aaaaaa;
+  margin-bottom: 15px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+  .cover_pic {
+    position: relative;
+    height: 350px;
+    background-image: url("../../src/intro_bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+    /* name text */
+    .cover_pic span {
+      position: relative;
+      color: #ffffff;
+      font-size: 23pt;
+			text-shadow: 1px 1px #555555;
+      top: 90%;
+      left: 20%;
+    }
+  .profile_pic {
+    position: absolute;
+    top: 220px;
+    left: 35px;
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 3px solid;
+    border-color: #aaaaaa;
+  }
+    .profile_pic img {
+      max-width: 100%;
+      height: auto;
+    }
+  .fav_links {
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    left: 20%;
+    width: 80%;
+    justify-content: space-around;
+  }
+    .fav_links span {
+      flex: 1;
+      text-align: center;
+			font-size: 12pt;
+			color: #101938;
+			font-weight: bold;
+      margin: 0 40px;
+      padding: 7px 0;
+			box-sizing: border-box;
+
+    }
+		.fav_links span:hover {
+			color: #244569;
+			border-bottom: 3px solid;
+			border-color: #244569;
+			cursor: pointer;
+		}
+.contents {
+  width: 1150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+	margin-bottom: 15px;
+}
+  .introduction {
+    flex: 1;
+    margin-right: 20px;
+		background-color: #ffffff;
+		border: 1px solid;
+		padding: 7px 10px;
+		box-sizing: border-box;
+		border-color: #aaaaaa;
+		border-radius: 3px;
+  }
+		.summary {
+			margin: 8px;
+			padding: 5px 0;
+			border-bottom: 2px solid;
+			border-color: #cccccc;
+			text-align: center;
+			font-weight: bold;
+		}
+		.text {
+			padding: 5px 0;
+			margin: 8px;
+		}
+
+  .posts {
+    flex: 2;
+		display: flex;
+		flex-direction: column;
+		padding: 7px 10px;
+  }
+		.posts div {
+			margin-top: 10px;
+			flex: 1;
+			background-color: #ffffff;
+			border: 1px solid;
+			border-color: #aaaaaa;
+			border-radius: 3px;
+
+		}
+		.console #profile45{
+			background-color: #107426;
+		}
+		.readme #profile45{
+			background-color: #3f176b;
+		}
+		.sourcecode #profile45{
+			background-color: #153975;
+		}
+		.gallery #profile45{
+			background-color: #5c1212;
+		}
+
+
+
+/* Layer View (Div Mode)
+* { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); }
+*/
