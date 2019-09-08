@@ -22,7 +22,7 @@
         <div class="cover_pic">
           <span>Junha Kim</span>
           <div class="profile_pic">
-            <img src="../../src/profile480.jpg">
+            <img src="../../src/profile480.jpg" alt="">
           </div>
         </div>
         <div class="fav_links">
@@ -67,6 +67,11 @@
             <span id="postTitle">Welcome Message</span>
             <div id="contentsBox">
               <?php
+                /*
+                Validate query string
+                if there is no query string has been passed, it shows message to refer to the Readme.md
+                if there is an query string named myname, it shows message with name and current timestamp.
+                */
                   if($_GET['myname'] === null):
                     echo "<p>You can get a welcome message.</p>";
                     echo "<p>Please follow Readme.md post.</p>";
