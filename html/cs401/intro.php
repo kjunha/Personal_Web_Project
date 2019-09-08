@@ -136,7 +136,7 @@
         location.replace("https://www.instagram.com/junha_d._kim/")
       }
       function goContactMe(){
-        location.replace("https://github.com/kjunha")
+        location.replace("https://kjunha.is3.byuh.edu/html/contact.php")
       }
     </script>
   </body>
